@@ -41,7 +41,9 @@ const { Content } = await entry.render();
       {formatDate(entry.data.publicationDate)}
     </p>
     <hr class="mb-6 mt-3" />
-    <div class="content prose mx-auto dark:prose-invert">
+    <div
+      class="prose-a:text-lightModeLink dark:prose-a:text-darkModeLink prose mx-auto max-w-none dark:prose-invert"
+    >
       <Content />
     </div>
   </div>

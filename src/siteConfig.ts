@@ -5,7 +5,7 @@ import type {
 } from "@/types.ts";
 
 export const SITE: SiteConfiguration = {
-  title: "Barebones",
+  title: "Astro Byte",
   description:
     "A barebones starter theme. Built with Astro, Tailwind CSS, and Markdown.",
   url: "https://barebones.superwebthemes.com",
@@ -14,25 +14,13 @@ export const SITE: SiteConfiguration = {
 };
 
 export const NAV_LINKS: NavigationLinks = {
-  about: {
-    path: "/about",
-    label: "About",
-  },
   blog: {
     path: "/blog",
-    label: "Blog",
+    label: "blog",
   },
   projects: {
     path: "/projects",
-    label: "Projects",
-  },
-  contact: {
-    path: "/contact",
-    label: "Contact",
-  },
-  documentation: {
-    path: "https://docs.superwebthemes.com",
-    label: "Documentation",
+    label: "projects",
   },
 };
 

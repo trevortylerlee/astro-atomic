@@ -1,0 +1,11 @@
+---
+import ThemeButtons from "./ThemeButtons.astro";
+---
+
+<div class="flex items-center justify-between pb-2 pt-12">
+  <span
+    class="text-sm text-lightModeForegroundMuted dark:text-darkModeForegroundMuted"
+    >&copy; {new Date().getFullYear()} ▪ Astro Byte 👾</span
+  >
+  <ThemeButtons />
+</div>

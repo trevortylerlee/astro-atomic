@@ -4,11 +4,32 @@ import { formatDate } from "@/lib/util";
 const { post } = Astro.props;
 ---
 
-<li class="flex flex-col no-underline sm:flex-row sm:justify-between">
-  <a href={`/blog/${post.slug}`}>
-    <span>{post.data.title}</span>
+<li class="flex flex-col">
+  <a
+    href={`/blog/${post.slug}`}
+    class="hover:text-lightModeLink focus:text-lightModeLink dark:hover:text-darkModeLink dark:focus:text-darkModeLink group"
+  >
+    <span class="flex items-center gap-1.5">
+      <span>{post.data.title}</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 24 24"
+        class="invisible group-hover:visible group-focus:visible"
+        ><path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 12h14m-7-7l7 7l-7 7"></path></svg
+      >
+    </span>
+    <span
+      class="block text-sm text-lightModeForegroundMuted group-hover:text-lightModeForeground group-focus:text-lightModeForeground dark:text-darkModeForegroundMuted dark:group-hover:text-darkModeForeground dark:group-focus:text-darkModeForeground"
+    >
+      {formatDate(post.data.publicationDate)}
+    </span>
   </a>
-  <div>
-    {formatDate(post.data.publicationDate)}
-  </div>
 </li>

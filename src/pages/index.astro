@@ -19,13 +19,15 @@ const projects = await getCollection("projects");
   <SeoPage slot="head" />
   <main>
     <Introduction />
-    <hr />
-    <h2 class="mb-3 text-lg font-bold">Blog posts</h2>
-    <ul class="grid list-none gap-2 p-0">
+    <span class="prose dark:prose-invert">
+      <hr class="my-6" />
+    </span>
+    <h2 class="mb-3 text-lg font-bold">Latest posts</h2>
+    <ul class="grid list-none gap-3 p-0">
       {posts.map((post) => <Post post={post} />)}
     </ul>
-    <h2 class="mb-3 mt-8 text-lg font-bold">Projects</h2>
-    <ul class="grid list-none gap-2 p-0">
+    <h2 class="mb-3 mt-8 text-lg font-bold">Recent projects</h2>
+    <ul class="grid list-none gap-3 p-0">
       {projects.map((project) => <Project project={project} />)}
     </ul>
   </main>

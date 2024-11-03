@@ -8,7 +8,7 @@ const { post } = Astro.props;
   <a href={`/blog/${post.slug}`}>
     <span>{post.data.title}</span>
   </a>
-  <div class="text-lightModeForegroundMuted dark:text-darkModeForegroundMuted">
+  <div>
     {formatDate(post.data.publicationDate)}
   </div>
 </li>

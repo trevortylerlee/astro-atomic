@@ -37,7 +37,9 @@ const { Content } = await entry.render();
       )
     }
     <h1 class="mt-3 text-3xl font-medium">{entry.data.title}</h1>
-    <p class="text-lightModeForegroundMuted dark:text-darkModeForegroundMuted">
+    <p
+      class="text-sm text-lightModeForegroundMuted dark:text-darkModeForegroundMuted"
+    >
       {formatDate(entry.data.publicationDate)}
     </p>
     <div

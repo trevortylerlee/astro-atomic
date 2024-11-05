@@ -8,9 +8,9 @@ export const SITE: SiteConfiguration = {
   title: "Astro Byte",
   description:
     "A barebones starter theme. Built with Astro, Tailwind CSS, and Markdown.",
-  url: "https://barebones.superwebthemes.com",
-  author: "SuperWeb Themes",
-  locale: "en-US",
+  url: "https://astro-byte.vercel.app",
+  author: "Trevor Tyler Lee",
+  locale: "en-CA",
 };
 
 export const NAV_LINKS: NavigationLinks = {

@@ -5,7 +5,7 @@ import pagefind from "astro-pagefind";
 import expressiveCode from "astro-expressive-code";
 
 export default defineConfig({
-  site: "https://astro-byte.vercel.app",
+  site: "https://astro-atomic.vercel.app",
   integrations: [
     tailwind(),
     sitemap(),

@@ -11,12 +11,12 @@ publicationDate: 2024-11-03T21:50:42Z
 - **Terminal** - We'll use the terminal to run `git` commands.
 - **Git** - Used to pull and push your project to [GitHub](https://github.com/).
 
-## Download and install Astro Byte
+## Download and install Astro Atomic
 
 There are a couple ways to download the template. We recommend using GitHub's "Use this template" feature, but you can also clone the repository directly.
 
 ### Using GitHub's "Use this template" feature
-1. On [Astro Byte's GitHub page](https://github.com/trevortylerlee/astro-byte), click the "Use this template" button on the top right of the page and select "Create a new repository".
+1. On [Astro Atomic's GitHub page](https://github.com/trevortylerlee/astro-byte), click the "Use this template" button on the top right of the page and select "Create a new repository".
 
 2. Name your repostiroy and click "Create repository from template".
 
@@ -53,9 +53,9 @@ To change the website metadata, edit `src/siteConfig.ts`.
 
 ```ts title="src/siteConfig.ts"
 export const SITE: SiteConfiguration = {
-  title: "Astro Byte",
-  description: "Fast & minimal theme for Astro.",
-  url: "https://astro-byte.vercel.app",
+  title: "Astro Atomic",
+  description: "Fast & minimal theme for Astro. Search and comments built in.",
+  url: "https://astro-atomic.vercel.app",
   author: "Trevor Tyler Lee",
   locale: "en-CA",
 };
@@ -163,7 +163,7 @@ Change the `site` option to the deployed site's URL.
 ```js title="astro.config.mjs" {2}
 export default defineConfig({
   // Change site to your deployed URL
-  site: "https://astro-byte.vercel.app",
+  site: "https://astro-atomic.vercel.app",
   integrations: [
     tailwind(),
     sitemap(),
@@ -183,7 +183,7 @@ Follow the steps at [giscus.app](https://giscus.app). Once you get your  custom 
 <script
   is:inline
   src="https://giscus.app/client.js"
-  data-repo="trevortylerlee/astro-byte"
+  data-repo="trevortylerlee/astro-atomic"
   data-repo-id="R_kgDOL_6l9Q"
   data-category="Announcements"
   data-category-id="DIC_kwDOL_6l9c4Cfk55"

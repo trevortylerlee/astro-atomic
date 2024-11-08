@@ -5,10 +5,9 @@ import type {
 } from "@/types.ts";
 
 export const SITE: SiteConfiguration = {
-  title: "Astro Byte",
-  description:
-    "A barebones starter theme. Built with Astro, Tailwind CSS, and Markdown.",
-  url: "https://astro-byte.vercel.app",
+  title: "Astro Atomic",
+  description: "Fast & minimal theme for Astro. Search and comments built in.",
+  url: "https://astro-atomic.vercel.app",
   author: "Trevor Tyler Lee",
   locale: "en-CA",
 };
